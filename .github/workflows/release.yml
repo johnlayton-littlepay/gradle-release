@@ -27,7 +27,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: ./gradlew bundle:distZip
+        run: ./gradlew version bundle:distZip
 
       - name: Release
         uses: softprops/action-gh-release@v2
