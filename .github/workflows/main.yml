@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - "create_build"
+      - "tidy_up"
       - "main"
 
 jobs:
