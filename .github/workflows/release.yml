@@ -1,6 +1,10 @@
 # $schema: https://raw.githubusercontent.com/SchemaStore/schemastore/refs/heads/master/src/schemas/json/github-workflow.json
 name: Build
 
+permissions:
+  packages: write
+  contents: write
+
 on:
   push:
     tags:
