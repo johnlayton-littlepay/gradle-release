@@ -10,14 +10,6 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven {
-        name = "codeartifact"
-        url = uri("https://littlepay-970114829785.d.codeartifact.ap-southeast-2.amazonaws.com/maven/release")
-        credentials {
-            username = "aws"
-            password = System.getenv("CODEARTIFACT_AUTH_TOKEN")
-        }
-    }
 }
 
 littlepay {

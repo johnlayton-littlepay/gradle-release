@@ -28,7 +28,7 @@ fun getToken(d: String, o: String, r: String): String {
 
 fun applyCredentials(repository: MavenArtifactRepository) {
     val pattern = "([a-zA-Z0-9\\-]+)-([0-9]+).d.codeartifact.([a-zA-Z0-9\\-]*).amazonaws.com".toRegex()
-    pattern.find(repository?.url?.host ?: "")?.let { result ->
+    pattern.find(repository.url?.host ?: "")?.let { result ->
         logger.info("Add credentials to repository ${repository.url}")
         val (domain, owner, region) = result.destructured
         logger.info("\tOwner  :: ${owner}")
