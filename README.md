@@ -1,2 +1,2 @@
-# gradle-release
+# littlepay-gradle-release
 
