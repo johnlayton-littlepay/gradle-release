@@ -15,13 +15,10 @@ gradle wrapper --gradle-distribution-url https://github.com/johnlayton-littlepay
 3. Add dependency configuration to version catalog. eg;
 ```toml
 [versions]
-...
 
 [plugins]
-...
 
 [libraries]
-...
 lp-sqs = { group= "com.littlepay", name = "lp-sqs", version = "1.0.3" }
 ```
 4. Add repository to `lib/build.gradle.kts`, eg;
