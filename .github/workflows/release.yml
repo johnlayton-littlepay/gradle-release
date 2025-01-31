@@ -33,7 +33,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          repository: johnlayton-littlepay/gradle-release
+          repository: johnlayton-littlepay/littlepay-gradle-release
           token: ${{ secrets.PUBLISH_TOKEN }}
           files: |
             bundle/build/distributions/*.zip
